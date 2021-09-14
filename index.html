@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <script defer src="index.js" ></script>
+  <title>Custom Video Player</title>
+</head>
+<body>
+  <main>
+    <section id="video">
+      <div class="container">
+        <div class="video-container">
+          <div class="video-image">
+              <video class="resposive" autoplay loop muted>
+                <source src="assets/video/hang.mp4" type="video/mp4">
+              </video>
+            <button id="play" class="resposive">
+              <img src="assets/svg/play.svg" alt="button_play">
+            </button>
+            <div class="controls">
+              <div class="video-buttons-group">
+                <button id="previous-button" class="video-button-group-item"></button>
+                <button id="play-button" class="video-button-group-item"></button>
+                <button id="next-button" class="video-button-group-item"></button>
+              </div>
+              <input type="range" name="progress" id="progress-bar" class="progress" min="0" max="100" value="0" step="1">
+              <button id="volume-button"></button>
+              <input type="range" name="volume" id="volume" class="progress progress-sound"  min="0" max="1" step="0.05" value="0.5">
+              <button id="full-screen-button"></button>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
